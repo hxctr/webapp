@@ -158,21 +158,22 @@ button {
     margin-top: 100px;
 }
 
-input[type=checkbox] {
-    /*This makes to not show the checkbox*/
+/* input[type=checkbox] {
+    /*This makes to not show the checkbox
     display: none;
-}
+} */
 
-.hamburger {
-    /* Not showing the hamburguer */
+/* .hamburger {
+    /* Not showing the hamburguer 
     display: none;
     font-size: 24px;
     user-select: none;
-}
+} 
+*/
 
 /*adding jquery to the navbar*/
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 
     .menu {
         display: none;
@@ -201,4 +202,4 @@ input[type=checkbox] {
     .hamburger {
         display: block;
     }
-}
+} */
