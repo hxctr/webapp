@@ -47,10 +47,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 10px; 
+    margin-left: 10px;
     height: 100vh;
-    object-fit: contain; 
-  
+    object-fit: contain;
+
 
 
 }
@@ -117,23 +117,23 @@ li {
 .tg {
     border-spacing: 30px;
     font-family: "Verdana";
-    
+
 }
 
-.subtable{
+.subtable {
     border-radius: 1em;
     /* background-color: turquoise; */
     border: 10px;
 }
 
-.tg-1{
+.tg-1 {
     max-width: 350px;
     text-align: center;
     border-radius: 7px;
-background-color: #dddddd;
+    background-color: #dddddd;
 }
 
-#subtg-1{
+#subtg-1 {
     width: 340px;
     height: 150px;
 }
@@ -147,13 +147,58 @@ button {
     height: 50;
     color: #ffffff;
     text-align: center;
-    border-radius: 10px; 
-    font-size: 15px; 
-  }
+    border-radius: 10px;
+    font-size: 15px;
+}
 
-  #maintable{
+#maintable {
     display: flex;
     justify-content: center;
     top: 100px;
     margin-top: 100px;
-  }
+}
+
+input[type=checkbox] {
+    /*This makes to not show the checkbox*/
+    display: none;
+}
+
+.hamburger {
+    /* Not showing the hamburguer */
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+/*adding jquery to the navbar*/
+
+@media (max-width: 768px) {
+
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: rgb(0, 0, 0);
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: #000000;
+        transition: 0.3s ease;
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
