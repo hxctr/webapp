@@ -1,0 +1,47 @@
+body {
+    min-width: 400px;
+}
+
+header {
+    display: flex; /*moves li to the left*/
+    justify-content: flex-end;
+    align-items: center; /*items in center Y axis header*/
+    height: 85px;
+    padding: 5px 10%;
+}
+
+header .logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+header .logo img {
+    height: 37px;
+    width: auto;
+    /**/
+}
+
+header .nav-links {
+    list-style: none; /*Delete all dots in links */
+    font-family: 'Verdana'; /*Font just to nav-links*/
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header .nav-links li {
+    display: inline-block; /*li side by side*/
+    padding: 0 20px;
+    
+}
+
+header .nav-links a {
+    color: black;
+}
+.hamburguer-icon {
+    display: none;
+}
+
+header a {
+    text-decoration: none;
+    /*borramos el que teniamos en header .nav-links a*/
+}
