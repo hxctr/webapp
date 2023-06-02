@@ -91,6 +91,26 @@ header .overlay .close {
     font-size: 65px;
 }
 
+.main-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.gallery-item .thumbnail {
+    width: 580px;
+    height: auto;
+    border: 2px solid black;
+}
+
+.main {
+    margin: 7rem auto;
+    text-align: center;
+    background-color: aqua;
+    
+}
+
 @media screen and (max-width: 970px) {
     header .nav-links {
         font-size: 0.90rem;
@@ -127,6 +147,12 @@ header .overlay .close {
         width: auto;
     }
 
+    .gallery-item .thumbnail {
+        width: 70%;
+        height: auto;
+    }
+
+
     /*display with a less screen width*/
 }
 
@@ -140,4 +166,60 @@ header .overlay .close {
         top: 15px;
         right: 35px;
     }
+
+    .gallery-item .thumbnail {
+        width: 70%;
+    }
+
+}
+/*------------------------Portfolio view----------------------------*/
+.main-portfolio {
+    /* background-color: brown; */
+    max-width: 1160px;
+    margin: 20px auto;
+
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+}
+
+.card-item .thumbnail-app {
+    width: 340px;
+    height: 150px;
+}
+
+table {
+    border: 1px solid black;
+    text-align: center;
+    margin: 15px 15px 15px 15px;
+    border-collapse: separate;
+
+    background-color:  #dddddd;
+ 
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+    font-family: 'Verdana';
+    font-weight: bold;
+}
+
+
+
+td{
+    padding: 0 0 10px 0;
+    
+}
+
+button {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    /* border: 2px solid #2cd9ff; */
+    border-radius: 8px;
+    padding: 10px 50px;
+    font-size: 15px;
+    font-weight: lighter;
 }
